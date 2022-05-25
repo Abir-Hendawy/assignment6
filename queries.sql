@@ -1,4 +1,4 @@
-SELECT  DISTINCT orderNumber,count(productCode) ,priceEach FROM `orderdetails` WHERE priceEach>100 and productCode like'%s18%'
+SELECT  DISTINCT orderNumber,count(productCode) ,priceEach FROM `orderdetails` WHERE priceEach>100 and productCode like'S18%'
 group by orderNumber;
 
 SELECT * FROM `payments` WHERE paymentDate like '%-%-05' or paymentDate like '%-%-06';
